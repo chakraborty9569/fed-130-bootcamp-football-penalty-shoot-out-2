@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penalty Shootout</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="./Assets/Manchester-City-Logo.png" alt="Man. City" height="130px" width="150px">
+                <span class="name" id="team-1-name">MCI</span>
+                <div class="row round-shots" id="team-1-round-shots">
+                    <span class="col team1-dot"></span>
+                    <span class="col team1-dot"></span>
+                    <span class="col team1-dot"></span>
+                    <span class="col team1-dot"></span>
+                    <span class="col team1-dot"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row score">
+                    <span id="team-1-score">0</span>
+                    <span>-</span>
+                    <span id="team-2-score">0</span>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./Assets/Liverpool-Logo.png" alt="Liverpool" height="130px" width="150px">
+                <span class="name" id="team-2-name">LIV</span>
+                <div class="row round-shots" id="team-2-round-shots">
+                    <span class="col team2-dot"></span>
+                    <span class="col team2-dot"></span>
+                    <span class="col team2-dot"></span>
+                    <span class="col team2-dot"></span>
+                    <span class="col team2-dot"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="final">
+            <button id="shoot-button" onclick="handleShootButton()"></button>
+        </div>
+        <div class="row" id="try">
+            <button id="try-button" onclick="location.reload()" hidden>Try Again</button>
+        </div>
+        
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
+
